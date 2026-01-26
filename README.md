@@ -34,18 +34,26 @@ git clone git@github.com:kingshuk00/ClockTalk.git
 git checkout main
 ```
 ## Compile:
-- After checking out the `main` branch:
+- After checking out the `main` branch, configure with cmake:
   ```bash
   cd ClockTalk
-  scons -j8
+  cmake -S . -B build
   ```
-- By default, the JSON compilation database for Clang tools is disabled. To enable,
+- Build with cmake:
   ```bash
-  scons --compdb=1
+  cmake --build build -j2
+  ```
+- Configure to produce JSON compilation database for LLVM tools:
+  ```bash
+  cmake -S . -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=1
+  ```
+- Configure for a verbose make:
+  ```bash
+  cmake -S . -B build -DCMAKE_VERBOSE_MAKEFILE=1
   ```
 - Default optimisation option is `-O3`. To compile with the debug symbols (`-g3 -O0`):
   ```bash
-  scons --buildtype=debug
+  cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
   ```
 
 ## Runtime options:
