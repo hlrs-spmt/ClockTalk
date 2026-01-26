@@ -1,8 +1,11 @@
 /*
+ * Copyright (c) 2026      Kingshuk Haldar.
+ *                         All rights reserved.
+ *
  * Copyright (c) 2025      High Performance Computing Center Stuttgart,
  *                         University of Stuttgart.  All rights reserved.
  *
- * Authors: Kingshuk Haldar <kingshuk.haldar@hlrs.de>
+ * Authors: Kingshuk Haldar <haldar.kingshuk@gmail.com>
  *
  */
 

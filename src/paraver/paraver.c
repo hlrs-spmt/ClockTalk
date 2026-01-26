@@ -9,11 +9,11 @@
  *
  */
 
+#include"paraver.h"
+#include"paraver_file.h"
 #include"common.h"
 #include"utils.h"
-#include"paraver_file.h"
 #include"trace_data.h"
-#include"paraver.h"
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>

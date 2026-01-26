@@ -9,10 +9,10 @@
  *
  */
 
+#include"clocks.h"
+#include"paraver/paraver.h"
 #include"common.h"
 #include"utils.h"
-#include"paraver.h"
-#include"clocks.h"
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>

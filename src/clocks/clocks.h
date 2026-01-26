@@ -12,6 +12,7 @@
 #ifndef REPLAY_CLOCKS_H__
 #define REPLAY_CLOCKS_H__
 
+#include"utils.h"
 
 extern void ClockInit(const int);
 extern void ClockFinalize();

@@ -1,8 +1,11 @@
 /*
+ * Copyright (c) 2026      Kingshuk Haldar.
+ *                         All rights reserved.
+ *
  * Copyright (c) 2023-2025 High Performance Computing Center Stuttgart,
  *                         University of Stuttgart.  All rights reserved.
  *
- * Authors: Kingshuk Haldar <kingshuk.haldar@hlrs.de>
+ * Authors: Kingshuk Haldar <haldar.kingshuk@gmail.com>
  *
  */
 
@@ -11,8 +14,8 @@
 
 #include"common.h"
 #include"trace_data.h"
-#include"paraver.h"
-#include"clocks.h"
+#include"paraver/paraver.h"
+#include"clocks/clocks.h"
 #include<float.h>
 
 static struct {

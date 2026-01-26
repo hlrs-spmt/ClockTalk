@@ -1,6 +1,6 @@
 #
 # Copyright (c) 2026      Kingshuk Haldar.
-                          All rights reserved.
+#                         All rights reserved.
 #
 # Authors: Kingshuk Haldar <haldar.kingshuk@gmail.com>
 #
