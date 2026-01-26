@@ -1,13 +1,21 @@
 /*
+ * Copyright (c) 2026      Kingshuk Haldar.
+ *                         All rights reserved.
+ *
  * Copyright (c) 2025      High Performance Computing Center Stuttgart,
  *                         University of Stuttgart.  All rights reserved.
  *
- * Authors: Kingshuk Haldar <kingshuk.haldar@hlrs.de>
+ * Authors: Kingshuk Haldar <haldar.kingshuk@gmail.com>
  *
  */
 
 #ifndef CLOCKTALK_UTILS_H__
 #define CLOCKTALK_UTILS_H__
+
+#include"common.h"
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 
 #define likely(x) __builtin_expect(!!(x), 1)
 #define unlikely(x) __builtin_expect(!!(x), 0)
