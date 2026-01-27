@@ -6,7 +6,7 @@
 #
 
 cmake_minimum_required(VERSION 3.15)
-project(ClockTalk VERSION 0.0.1 LANGUAGES C)
+project(ClockTalk VERSION 1.0.0 LANGUAGES C)
 
 # Language options
 set(CMAKE_C_STANDARD 17)
@@ -43,22 +43,17 @@ if(CLOCKTALK_ENABLE_ASAN OR CLOCKTALK_ENABLE_UBSAN)
   endif()
   list(APPEND _SAN_FLAGS -fno-omit-frame-pointer)
 
-  # Apply to all
   add_compile_options(${_SAN_FLAGS})
   add_link_options(${_SAN_FLAGS})
 endif()
 
-# Global definitions (from SCons CPPDEFINES)
 add_compile_definitions(
     _POSIX_C_SOURCE=200809        # POSIX APIs (e.g., strdup, clock_gettime)
-    CLOCKTALK_VERSION_MAJOR=0
+    CLOCKTALK_VERSION_MAJOR=1
     CLOCKTALK_VERSION_MINOR=0
-    CLOCKTALK_VERSION_PATCH=1
-    CLOCKTALK_NORELEASE           # indicate non-release build (always defined)
+    CLOCKTALK_VERSION_PATCH=0
+    #CLOCKTALK_NORELEASE           # indicate non-release build
 )
 
-# Include the source directory for headers
 include_directories(${CMAKE_SOURCE_DIR}/src)
-
-# Add subdirectory for source targets
 add_subdirectory(src)
